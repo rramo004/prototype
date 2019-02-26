@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NoinputComponent } from './components/noinput/noinput.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prototype';
+  input: NoinputComponent = new NoinputComponent();
+  
 }
