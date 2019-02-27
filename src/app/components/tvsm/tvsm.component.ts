@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonService } from '../../services/json.service';
 
 @Component({
   selector: 'app-tvsm',
@@ -6,23 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tvsm.component.css']
 })
 export class TvsmComponent implements OnInit {
+  rows: {};
 
-  rows: any[];
-  constructor() { }
+  constructor(private jsonService: JsonService) {}
 
   ngOnInit() {
-      this.rows = [
-        ["Message Valid",  false],
-        ["UTC Time Valid",  false],
-        ["GPS Time Valid", true],
-        ["CNI TFOM", 0],
-        ["GPS UTC TFOM", 0],
-        ["Aircraft Time", 0],
-        ["UTC Time", 0],
-        ["Day of Year", 0],
-        ["Week Number", 0],
-        ["Year", 0]
-      ]
+    this.jsonService.getJSON()
+      .then (result  => {
+      this.rows = result;
+      });
   }
 
 }

@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./noinput.component.css']
 })
 export class NoinputComponent implements OnInit {
-  @Input() rowEntries: any[];
+  @Input() key: any[];
+  @Input() value: any[];
 
   constructor() { }
 
