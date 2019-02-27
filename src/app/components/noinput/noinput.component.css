@@ -1,6 +1,10 @@
 td {
-  display: inline-block;
-  width: 30%;
+  width: 200px;
   padding: 10px;
   text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+tr {
+    width: 600px;
 }

@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoinputComponent } from './components/noinput/noinput.component';
 import { MatTableModule } from '@angular/material';
 import { SecuritybarComponent } from './components/securitybar/securitybar.component';
+import { TvsmComponent } from './components/tvsm/tvsm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoinputComponent,
-    SecuritybarComponent
+    SecuritybarComponent,
+    TvsmComponent
   ],
   imports: [
     BrowserModule,
