@@ -1,0 +1,10 @@
+div {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background-color: green;
+}
+
+.secret {
+    background-color: red;
+}
