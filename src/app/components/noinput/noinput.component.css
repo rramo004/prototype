@@ -1,3 +1,6 @@
-tr {
-    width: 30%;
-  }
+td {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  text-align: left;
+}
