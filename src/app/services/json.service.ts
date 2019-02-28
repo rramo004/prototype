@@ -10,7 +10,7 @@ export class JsonService {
   constructor(private http: HttpClient) {
   }
 
-  public getJSON(): Promise<any> {
-    return this.http.get('http://localhost:4200/assets/tvsm.json').toPromise();
+  public getJSON(html: string): Promise<any> {
+    return this.http.get(html).toPromise();
   }
 }

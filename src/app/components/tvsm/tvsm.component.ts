@@ -12,10 +12,10 @@ export class TvsmComponent implements OnInit {
   constructor(private jsonService: JsonService) {}
 
   ngOnInit() {
-    this.jsonService.getJSON()
+    this.jsonService.getJSON('http://localhost:4200/assets/tvsm.json')
       .then (result  => {
       this.rows = result;
-      });
+    });
   }
 
 }
