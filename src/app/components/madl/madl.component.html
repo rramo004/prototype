@@ -1,3 +1,21 @@
-<p>
-  madl works!
-</p>
+<div>
+  <h3 class="heading">MADL Nodes</h3>
+</div>
+<form  (ngSubmit)="onSubmit()">
+  <table>
+    <tr> 
+      <td><app-dropdowninput></app-dropdowninput></td>
+    </tr>
+    <tr>
+        <noinput [key]="'AircraftType'" [value]="rows['AircraftType']"></noinput>
+    </tr>
+    <tr>
+      <td><app-numberinput></app-numberinput></td>
+    </tr>
+
+  </table>
+
+  <p>
+      <button type="submit" md-raised-button>Submit</button>
+    </p>
+</form>

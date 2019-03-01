@@ -1,6 +1,7 @@
 import {Input} from '@angular/core';
 import { Component, OnInit, OnChanges} from '@angular/core';
 import {AircraftType} from '../../common/enumerations'
+import {MatSelectModule} from '@angular/material/select';
 
 @Component({
   selector: 'app-dropdowninput',

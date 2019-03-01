@@ -1,6 +1,7 @@
 import {Input} from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-numberinput',
   templateUrl: './numberinput.component.html',
