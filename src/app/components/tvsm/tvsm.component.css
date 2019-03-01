@@ -1,7 +1,12 @@
-tr:nth-child(odd) {
-    background-color: #f2f2f2;
+tr{
+    background-color: #424242;
+    color: white;
 }
 
 table {
     border-collapse: collapse;
+}
+
+.heading {
+    color: white;
 }

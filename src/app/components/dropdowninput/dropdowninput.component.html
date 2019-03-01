@@ -1,0 +1,10 @@
+<td> {{key}} </td> <td> {{value}} </td> 
+<td>  
+  <mat-form-field>
+    <mat-select [(value)]="selected">
+      <mat-option *ngFor="let aircraft of aircraftType" [value]="aircraft">
+        {{aircraft}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</td>

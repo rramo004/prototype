@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoinputComponent } from './components/noinput/noinput.component';
-import { MatTableModule, MatToolbarModule, MatTabsModule } from '@angular/material';
+import { MatTableModule, MatToolbarModule, MatTabsModule, MatFormFieldModule, MatSelectModule } from '@angular/material';
 import { SecuritybarComponent } from './components/securitybar/securitybar.component';
 import { TvsmComponent } from './components/tvsm/tvsm.component';
 
@@ -16,6 +16,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { Route1Component } from './components/navbar/routes/route1/route1.component';
 import { Route2Component } from './components/navbar/routes/route2/route2.component';
 import { TabviewComponent } from './components/tabview/tabview.component';
+import { DropdowninputComponent } from './components/dropdowninput/dropdowninput.component';
+import { NumberinputComponent } from './components/numberinput/numberinput.component';
+import { MadlComponent } from './components/madl/madl.component';
 
 const appRoutes: Routes = [
   { path: 'route1', component: Route1Component },
@@ -31,7 +34,10 @@ const appRoutes: Routes = [
     NavbarComponent,
     Route1Component,
     Route2Component,
-    TabviewComponent
+    TabviewComponent,
+    DropdowninputComponent,
+    NumberinputComponent,
+    MadlComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -44,6 +50,8 @@ const appRoutes: Routes = [
     MatTableModule,
     MatToolbarModule,
     MatTabsModule,
+    MatFormFieldModule,
+    MatSelectModule,
     HttpClientModule
   ],
   providers: [

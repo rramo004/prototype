@@ -1,8 +1,11 @@
 div {
     width: 100%;
     text-align: center;
+    line-height: 8px;
     padding: 8px;
     background-color: green;
+    height: 8px;
+    color: white;
 }
 
 .secret {
