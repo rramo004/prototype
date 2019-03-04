@@ -2,10 +2,10 @@
     "AircraftType": "STOVL",
     "DegradationState":  "UNDEF_0",
     "FirstNode": 0,
-    "MADL UID": 0,
+    "MADLUID": 0,
     "MIDE": 0,
-    "Num Nodes": 0,
-    "Flight ID": 0,
-    "Mission ID": 0,
-    "Node ID": 0
+    "NumNodes": 0,
+    "FlightID": 0,
+    "MissionID": 0,
+    "NodeID": 0
 }

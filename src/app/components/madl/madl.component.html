@@ -3,14 +3,29 @@
 </div>
 <form  (ngSubmit)="onSubmit()">
   <table>
-    <tr> 
-      <td><app-dropdowninput></app-dropdowninput></td>
+    <tr>
+      <app-dropdowninput key="AircraftType" [value]="rows['AircraftType']" enumType="AircraftType"></app-dropdowninput>
     </tr>
     <tr>
-        <noinput [key]="'AircraftType'" [value]="rows['AircraftType']"></noinput>
+      <noinput key="DegradationState" [value]="rows['DegradationState']"></noinput>
     </tr>
     <tr>
-      <td><app-numberinput></app-numberinput></td>
+      <noinput key="FirstNode" [value]="rows['FirstNode']"></noinput>
+    </tr>
+    <tr>
+      <app-numberinput key="MADLUID" [value]="rows['MADLUID']"></app-numberinput>
+    </tr>
+    <tr>
+      <noinput key="MIDE" [value]="rows['MIDE']"></noinput>
+    </tr>
+    <tr>
+      <noinput key="NumNodes" [value]="rows['NumNodes']"></noinput>
+    </tr>
+    <tr>
+      <app-numberinput key="MissionID" [value]="rows['MissionID']"></app-numberinput>
+    </tr>
+    <tr>
+      <app-numberinput key="NodeID" [value]="rows['NodeID']"></app-numberinput>
     </tr>
 
   </table>

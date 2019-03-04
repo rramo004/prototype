@@ -11,15 +11,20 @@ import {MatSelectModule} from '@angular/material/select';
 export class DropdowninputComponent implements OnInit{
   @Input() key: any[];
   @Input() value: any[];
-  aircraftType: string[];
-  selected: string;
-  shadow: string;
+  @Input() enumType: string;
+  array: string[];
 
   constructor() { 
+    this.array = [];
   }
 
   ngOnInit() {
-    this.aircraftType = Object.keys(AircraftType).map(key => AircraftType[key]);
+    
+    switch(this.enumType) {
+      case 'AircraftType': 
+        this.array = Object.keys(AircraftType).map(key => AircraftType[key]);
+    }
+    
   }
 
 

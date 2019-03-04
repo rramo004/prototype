@@ -1,0 +1,20 @@
+tr{
+    background-color: #424242;
+    color: white;
+    width: 600px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.heading {
+    color: white;
+}
+td {
+    width: 200px;
+    padding: 10px;
+    height: 10px !important;
+    text-align: left;
+    border: 1px solid grey;
+  }

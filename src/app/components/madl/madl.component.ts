@@ -9,19 +9,23 @@ import { MatInputModule} from '@angular/material/input'
 })
 export class MadlComponent implements OnInit {
   rows: {};
+  results: any;
+  selected: string;
 
-  constructor(private jsonService: JsonService) { }
+  constructor(private jsonService: JsonService) {
+    this.rows = { };
+  }
 
   ngOnInit() {
     this.jsonService.getJSON('http://localhost:4200/assets/madl.json')
     .then (result  => {
-    this.rows = result;
-    console.log(this.rows);
+      this.rows = result;
     });
   }
 
   onSubmit() {
-    alert("Thanks for submitting! Data: ");
+    // alert("Thanks for submitting! Data: ");
+    console.log("Thanks for submitting! Data: ");
   }
 }
 
