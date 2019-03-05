@@ -1,5 +1,6 @@
 import {Input} from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import {FormGroup, FormControl, Validators} from '@angular/forms';
 
 
 @Component({
@@ -10,7 +11,22 @@ import { Component, OnInit } from '@angular/core';
 export class NumberinputComponent implements OnInit {
   @Input() key: any[];
   @Input() value: any[];
-  @Input() numInput: number;
+  
+  form = new FormGroup(
+    {
+      inputNum: new FormControl ( '', 
+        [
+          Validators.required,
+          Validators.min(0),
+          Validators.max(10)
+        ]
+      )
+    }
+  );
+
+  get inputNum() {
+    return this.form.get('inputNum');
+  }
   
   constructor() { }
 

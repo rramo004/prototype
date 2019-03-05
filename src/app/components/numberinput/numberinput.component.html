@@ -1,6 +1,19 @@
-<td> {{key}} </td> <td> {{value}} </td>
-<td>
-    <mat-form-field>
-      <input matInput type="number" value="numInput">
-    </mat-form-field>
-</td>
+<form [formGroup]="form">
+    <td> {{key}} </td> <td> {{value}} </td>
+    <td>
+        <mat-form-field>
+          <input formControlName="inputNum"
+                 id="inputNum"
+                 matInput
+                 type="number"
+                 value="numInput"
+                 class="form-control">
+                 <div *ngIf="inputNum.touched && inputNum.invalid" class="alert alert-danger">
+                  <div *ngIf="inputNum.errors.required"> Number is required </div>
+                  <div *ngIf="inputNum.errors.min"> Number is min of 1 </div>
+                  <div *ngIf="inputNum.errors.max"> Number is max of 10 </div>
+                </div>
+        </mat-form-field>
+    </td>
+</form>
+
