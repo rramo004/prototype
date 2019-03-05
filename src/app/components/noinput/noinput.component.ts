@@ -8,8 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NoinputComponent implements OnInit {
   @Input() key: any[];
   @Input() value: any[];
+  @Input() type: string;
 
   constructor() { }
 
   ngOnInit() {}
+
+  checkType():boolean {
+    if (this.type == null) return true;
+
+    return this.type != "TVSM" ? true : false;
+  }
 }
