@@ -9,7 +9,12 @@ td {
       width: 600px;
   }
 
+.centered {
+    text-align: center;
+}
+
 input.ng-valid {
+    width: 80%;
     box-shadow: 0 0 3px #51cbee;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
@@ -17,6 +22,7 @@ input.ng-valid {
 }
 
 input.ng-invalid {
+    width: 80%;
     box-shadow: 0 0 3px red;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
