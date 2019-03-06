@@ -20,6 +20,8 @@ import { TabviewComponent } from './components/tabview/tabview.component';
 import { DropdowninputComponent } from './components/dropdowninput/dropdowninput.component';
 import { NumberinputComponent } from './components/numberinput/numberinput.component';
 import { MadlComponent } from './components/madl/madl.component';
+import { TextinputComponent } from './components/textinput/textinput.component';
+import { MadlsublinksComponent } from './components/madlsublinks/madlsublinks.component';
 
 const appRoutes: Routes = [
   { path: 'route1', component: Route1Component },
@@ -38,7 +40,9 @@ const appRoutes: Routes = [
     TabviewComponent,
     DropdowninputComponent,
     NumberinputComponent,
-    MadlComponent
+    MadlComponent,
+    TextinputComponent,
+    MadlsublinksComponent
   ],
   imports: [
     RouterModule.forRoot(

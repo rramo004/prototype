@@ -1,0 +1,13 @@
+tr{
+    background-color: #424242;
+    color: white;
+    width: 600px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.heading {
+    color: white;
+}

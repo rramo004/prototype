@@ -1,0 +1,35 @@
+<form  (ngSubmit)="onSubmit()">
+    <table> 
+      <tr>
+        <noinput key="AircraftDataValid" [value]="sublink['AircraftDataValid']"></noinput>
+      </tr>
+      <tr>
+        <noinput key="DataCapable" [value]="sublink['DataCapable']"></noinput>
+      </tr>
+      <tr>
+        <noinput key="MADL_UID" [value]="sublink['MADL_UID']"></noinput>
+      </tr>
+      <tr>
+        <noinput key="NodeID" [value]="sublink['NodeID']"></noinput>
+      </tr>
+      <tr>
+        <app-dropdowninput key="OperationalState" [value]="sublink['OperationalState']" enumType="OperationalState"></app-dropdowninput>
+      </tr>
+      <tr>
+        <noinput key="ReceiveRate" [value]="sublink['ReceiveRate']"></noinput>
+      </tr>
+      <tr>
+        <app-dropdowninput key="SearchMode" [value]="sublink['SearchMode']" enumType="SearchMode"></app-dropdowninput>
+      </tr>
+      <tr>
+        <noinput key="Status" [value]="sublink['Status']"></noinput>
+      </tr>
+      <tr>
+        <noinput key="TransmitRate" [value]="sublink['TransmitRate']"></noinput>
+      </tr>
+      <tr>
+        <noinput key="VoiceCapable" [value]="sublink['VoiceCapable']"></noinput>
+      </tr>      
+    </table>
+    <br>
+  </form>

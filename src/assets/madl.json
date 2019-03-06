@@ -2,10 +2,36 @@
     "AircraftType": "STOVL",
     "DegradationState":  "UNDEF_0",
     "FirstNode": 0,
+    "LinkArray": [
+        {
+          "AircraftDataValid": false,
+          "DataCapable": false,
+          "MADL_UID": 0,
+          "NodeID": 0,
+          "OperationalState": "NONE",
+          "ReceiveRate": "NOT CONNECTED",
+          "SearchMode": "NO STATEMENT",
+          "Status": "NO STATEMENT",
+          "TransmitRate": "NOT CONNECTED",
+          "VoiceCapable": false
+        },
+        {
+          "AircraftDataValid": true,
+          "DataCapable": true,
+          "MADL_UID": 5,
+          "NodeID": 0,
+          "OperationalState": "IDLE",
+          "ReceiveRate": "CONNECTED",
+          "SearchMode": "NO STATEMENT",
+          "Status": "NO STATEMENT",
+          "TransmitRate": "NOT CONNECTED",
+          "VoiceCapable": false
+        }
+      ],
     "MADLUID": 0,
     "MIDE": 0,
     "NumNodes": 0,
-    "FlightID": 0,
+    "FlightID": "FF",
     "MissionID": 0,
     "NodeID": 0
 }

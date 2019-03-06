@@ -1,6 +1,6 @@
 import {Input} from '@angular/core';
 import { Component, OnInit, OnChanges} from '@angular/core';
-import {AircraftType} from '../../common/enumerations'
+import {AircraftType, OperationalState, SearchMode} from '../../common/enumerations'
 import {MatSelectModule} from '@angular/material/select';
 
 @Component({
@@ -23,6 +23,13 @@ export class DropdowninputComponent implements OnInit{
     switch(this.enumType) {
       case 'AircraftType': 
         this.array = Object.keys(AircraftType).map(key => AircraftType[key]);
+        break;
+      case 'OperationalState': 
+        this.array = Object.keys(OperationalState).map(key => OperationalState[key]);
+        break;
+      case 'SearchMode': 
+        this.array = Object.keys(SearchMode).map(key => SearchMode[key]);
+        break;
     }
     
   }

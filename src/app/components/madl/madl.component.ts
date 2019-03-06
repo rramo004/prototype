@@ -11,15 +11,18 @@ export class MadlComponent implements OnInit {
   rows: {};
   results: any;
   selected: string;
+  links: any[];
 
   constructor(private jsonService: JsonService) {
     this.rows = { };
+    this.links = [];
   }
 
   ngOnInit() {
     this.jsonService.getJSON('http://localhost:4200/assets/madl.json')
     .then (result  => {
       this.rows = result;
+      this.links = this.rows["LinkArray"];    
     });
   }
 

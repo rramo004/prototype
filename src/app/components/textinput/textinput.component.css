@@ -1,0 +1,24 @@
+td {
+    width: 200px;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid grey;
+  }
+  
+  tr {
+      width: 600px;
+  }
+
+input.ng-valid {
+    box-shadow: 0 0 3px #51cbee;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #51cbee;
+}
+
+input.ng-invalid {
+    box-shadow: 0 0 3px red;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid red;
+}

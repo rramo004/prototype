@@ -23,6 +23,9 @@
       <noinput key="NumNodes" [value]="rows['NumNodes']"></noinput>
     </tr>
     <tr>
+      <app-textinput key="FlightID" [value]="rows['FlightID']"></app-textinput>
+    </tr>
+    <tr>
       <app-numberinput key="MissionID" [value]="rows['MissionID']"></app-numberinput>
     </tr>
     <tr>
@@ -32,6 +35,14 @@
   </table>
 
   <p>
-      <button type="submit" md-raised-button>Submit</button>
-    </p>
+    <button type="submit" md-raised-button>Submit</button>
+  </p>
+
+  <div>
+      <h3 class="heading">Link Array Data</h3>
+  </div>
+  <div *ngFor="let link of links;let i = index">
+      <h4 class="heading">Sublink {{i}}</h4>
+    <app-madlsublinks [sublink]="link"><h3 class="heading"></h3></app-madlsublinks>
+  </div>
 </form>
