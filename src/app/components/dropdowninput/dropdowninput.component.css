@@ -5,3 +5,10 @@ td {
     text-align: left;
     border: 1px solid grey;
   }
+
+/deep/ .mat-select-value{
+  color: white;
+}
+
+
+  

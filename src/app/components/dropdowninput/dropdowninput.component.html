@@ -1,10 +1,10 @@
 <td> {{key}} </td> <td> {{value}} </td>
 <td>  
-  <mat-form-field>
+
     <mat-select [(value)]="selected" style="height:2px;">
           <mat-option *ngFor="let a of array" [value]="a">
               {{a}}
             </mat-option>
     </mat-select>
-  </mat-form-field>
+
 </td>
