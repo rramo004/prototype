@@ -7,8 +7,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoinputComponent } from './components/noinput/noinput.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatTableModule, MatToolbarModule, MatTabsModule, MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { FormsModule, 
+         ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule, 
+         MatToolbarModule, 
+         MatTabsModule, 
+         MatFormFieldModule, 
+         MatSelectModule, 
+         MatInputModule, 
+         MatTooltipModule } from '@angular/material';
 import { SecuritybarComponent } from './components/securitybar/securitybar.component';
 import { TvsmComponent } from './components/tvsm/tvsm.component';
 
@@ -58,6 +65,7 @@ const appRoutes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatTooltipModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

@@ -2,16 +2,17 @@
     <td> {{key}} </td> <td> {{value}} </td>
     <td class="centered">
         <input formControlName="inputNum"
+               [matTooltip]='getErrorStatus()'
                id="inputNum"
                matInput
                type="number"
                value="inputNum"
                class="form-control">
-               <div *ngIf="(inputNum.dirty || inputNum.touched) && inputNum.invalid" class="alert alert-danger">
+               <!-- <div *ngIf="(inputNum.dirty || inputNum.touched) && inputNum.invalid" class="alert alert-danger">
                 <div *ngIf="inputNum.errors.required"> Number is required </div>
                 <div *ngIf="inputNum.errors.min"> Number is min of 1 </div>
                 <div *ngIf="inputNum.errors.max"> Number is max of 10 </div>
-              </div>
+              </div> -->
     </td>
 </form>
 

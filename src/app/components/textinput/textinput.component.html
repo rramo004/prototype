@@ -2,16 +2,16 @@
     <td> {{key}} </td> <td> {{value}} </td>
     <td class="centered">
         <input formControlName="inputText"
+               [matTooltip]='getErrorStatus()'
                id="inputText"
                matInput
                type="text"
-               
                class="form-control">
-               <div *ngIf="(inputText.dirty || inputText.touched) && inputText.invalid" class="alert alert-danger">
+               <!-- <div *ngIf="(inputText.dirty || inputText.touched) && inputText.invalid" class="alert alert-danger">
                 <div *ngIf="inputText.errors.required"> String is required </div>
                 <div *ngIf="inputText.errors.minlength"> Need at least 2 character </div>
                 <div *ngIf="inputText.errors.maxlength"> Exceeded max characters </div>
-              </div>
+              </div> -->
     </td>
 </form>
 
